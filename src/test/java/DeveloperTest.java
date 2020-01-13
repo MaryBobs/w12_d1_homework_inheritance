@@ -45,4 +45,10 @@ public class DeveloperTest {
         assertEquals(370, developer.getBonus(), 0.01);
     }
 
+    @Test
+    public void cannotEnterNullValueWhenChangingName() {
+        developer.setName(null);
+        assertEquals("Bob", developer.getName());
+    }
+
 }

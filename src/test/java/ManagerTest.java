@@ -51,4 +51,16 @@ public class ManagerTest {
         assertEquals(800, manager.getBonus(), 0.01);
     }
 
+    @Test
+    public void canChangeName() {
+        manager.setName("Alfie");
+        assertEquals("Alfie", manager.getName());
+    }
+
+    @Test
+    public void cannotEnterNullValueWhenChangingName() {
+        manager.setName(null);
+        assertEquals("Phil", manager.getName());
+    }
+
 }

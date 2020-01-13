@@ -54,4 +54,10 @@ public class DirectorTest {
     public void canGetBonus() {
         assertEquals(1000, director.getBonus(), 0.01);
     }
+
+    @Test
+    public void cannotEnterNullValueWhenChangingName() {
+        director.setName(null);
+        assertEquals("Mike", director.getName());
+    }
 }
