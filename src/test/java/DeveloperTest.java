@@ -42,7 +42,7 @@ public class DeveloperTest {
 
     @Test
     public void canGetBonus() {
-        assertEquals(370, developer.getBonus(), 0.01);
+        assertEquals(370, developer.payBonus(), 0.01);
     }
 
     @Test
